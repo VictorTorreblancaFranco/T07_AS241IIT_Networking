@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <div class="navbar__brand">
+        <a routerLink="/" class="brand-link">
+            <span class="brand-name">TravelNet</span>
+        </a>
+    </div>
+    <ul class="navbar__menu">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a></li>
+        <li><a routerLink="/profiles" routerLinkActive="active">Perfiles</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">Quiénes Somos</a></li>
+        <li><a routerLink="/services" routerLinkActive="active">Servicios</a></li>
+        <li><a routerLink="/destinations" routerLinkActive="active">Destinos</a></li>
+        <li><a routerLink="/events" routerLinkActive="active">Eventos</a></li>
+    </ul>
+</nav>
