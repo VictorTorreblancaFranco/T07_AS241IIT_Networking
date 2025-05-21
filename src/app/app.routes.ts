@@ -12,7 +12,12 @@ export const routes: Routes = [
                 loadComponent: () =>
                     import('../app/pages/home/home.component').then(m => m.PageHomeComponent),
             },
-            // otras rutas aquí...
+            {
+                path: 'about',
+                loadComponent: () =>
+                    import('../app/pages/about/about.component').then(m => m.AboutComponent),
+            },
+            // otras rutas si las tienes
         ],
     },
 ];
