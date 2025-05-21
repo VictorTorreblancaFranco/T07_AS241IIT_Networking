@@ -1,0 +1,8 @@
+<div class="card">
+    <h3 class="city">{{ city }}</h3>
+    <img [src]="image" [alt]="city" />
+    <ul class="details-list">
+        <li *ngFor="let detail of details">📌 {{ detail }}</li>
+    </ul>
+    <button class="btn-see">Ver destino</button>
+</div>

@@ -1,0 +1,10 @@
+<section class="destinations-section">
+    <h2 class="title">{{ title }}</h2>
+    <p class="subtitle">{{ subtitle }}</p>
+
+    <div class="cards-container">
+        <app-matcar *ngFor="let destination of destinations" [city]="destination.city" [image]="destination.image"
+            [details]="destination.details">
+        </app-matcar>
+    </div>
+</section>
