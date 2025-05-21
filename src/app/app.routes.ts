@@ -7,11 +7,12 @@ export const routes: Routes = [
         component: MainLayoutComponent,
         children: [
             { path: '', redirectTo: 'inicio', pathMatch: 'full' },
-            // Ruta temporal con componente dummy para evitar errores
             {
                 path: 'inicio',
-                loadComponent: () => import('./shared/layout/placeholder/placeholder.component').then(m => m.PlaceholderComponent)
+                loadComponent: () =>
+                    import('../app/pages/home/home.component').then(m => m.PageHomeComponent),
             },
+            // otras rutas aquí...
         ],
     },
 ];
